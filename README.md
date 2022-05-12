@@ -2,8 +2,9 @@
 
 # Technologies
 
-React Js,
-Sass
+React Js, (17.0.2)
+React-router-dom (5.3.1)
+Sass (1.50.1)
 
 There is not any UI kit framework.
 Only custom UI components that created for thie project by developer.
