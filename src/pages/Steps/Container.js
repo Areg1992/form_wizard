@@ -3,7 +3,7 @@ import './Steps.scss';
 import {useHistory} from 'react-router-dom';
 import Button from "../../components/Button/Button";
 import Summary from "./Summary";
-import Start from "../Start/Start";
+import Start from "./Start";
 import FormStep from "./FormStep";
 import {packagesList} from "../../data/data";
 

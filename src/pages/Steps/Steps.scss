@@ -34,3 +34,11 @@
 .fields-wrapper {
   display: inline-block;
 }
+
+.wrapper {
+  background-color: rgba(0,0,0, 0.08);
+  text-align: center;
+  max-width: em(800);
+  width: 100%;
+  margin: auto;
+}
