@@ -1,6 +1,18 @@
-About The Project
+## Multi-step form (wizard) where user can fill in information, get price and buy an insurance policy
 
-Multi-step form (wizard) where user can fill in information, get price and buy an insurance policy.
+# Technologies
+
+React Js,
+Sass
+
+There is not any UI kit framework.
+Only custom UI components that created for thie project by developer.
+
+There is not only js code organization but also SASS 
+(chekout ## assets folder)
+
+The project was too small that is why developer did not use Redux.
+
 
 # Getting Started with Create React App
 
