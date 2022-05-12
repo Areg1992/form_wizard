@@ -7,3 +7,10 @@ h2 {
   margin: 0;
   @include font(48, 1.1, currentColor, 400, 0, $segoiUI);
 }
+
+.description {
+
+  p {
+    @include font(18, 1.3, currentColor, 400, 0, $segoiUI);
+  }
+}

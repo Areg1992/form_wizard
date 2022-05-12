@@ -30,7 +30,7 @@ const FormStep = ({name, setName, age, setAge, country, setCountry, packageName,
             <h1>
                 Tell us about yourself
             </h1>
-            <form>
+            <div className="form-step">
                 <Field fieldName="Name"
                        required={true}
                        type="text"
@@ -69,7 +69,7 @@ const FormStep = ({name, setName, age, setAge, country, setCountry, packageName,
                         </p>
                     </div>
                 </div>
-            </form>
+            </div>
         </div>
     );
 };

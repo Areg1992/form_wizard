@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import './Steps.scss';
 import {useHistory} from 'react-router-dom';
 import Button from "../../components/Button/Button";
 import Summary from "./Summary";
@@ -52,7 +53,7 @@ const Container = () => {
                     />
             }
 
-            <div className="flex-container align-center">
+            <div className="flex-container align-center column-gap">
                 {step !== 0 ?
                     <Button primary={false}
                             text={'Back'}

@@ -1,0 +1,9 @@
+@import "../../assets/scss/utils/module";
+
+.no-found {
+  height: 100vh;
+
+  .wrapper {
+      padding: em(100) 0;
+  }
+}

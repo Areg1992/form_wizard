@@ -9,13 +9,12 @@ const Start = () => {
                 <h1>
                     Hello There!
                 </h1>
-                <div>
+                <div className="description">
                     <p>
                         Let's but insurance. it is going to take only few steps
                     </p>
                 </div>
             </div>
-
         </div>
     );
 };

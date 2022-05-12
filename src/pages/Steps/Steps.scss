@@ -1,10 +1,8 @@
-@import "../../assets/scss/utils/_module";
+@import "../../assets/scss/utils/module";
 
 .page {
   text-align: center;
 }
-
-
 
 .packages {
   margin-bottom: em(40);
@@ -16,4 +14,12 @@
   p {
     @include font(24, 1.5, $blackColor, 700, 0, $segoiUI);
   }
+}
+
+.column-gap {
+  column-gap: em(16);
+}
+
+.form-step {
+
 }
