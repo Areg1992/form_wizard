@@ -1,0 +1,20 @@
+@import "../../assets/scss/utils/_module";
+
+.btn {
+  display: inline-flex;
+  cursor: pointer;
+  padding: em(10) em(24);
+  border-radius: 3px;
+  span {
+    color: currentColor;
+  }
+  &-stroke {
+    border: 1px solid black;
+    @include font(16, 1.3125, $blackColor, 700, 0, $segoiUI);
+  }
+  &-primary {
+    border: 0;
+    background-color: black;
+    @include font(16, 1.3125, $whiteColor, 700, 0, $segoiUI);
+  }
+}

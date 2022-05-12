@@ -1,0 +1,48 @@
+@import "../../assets/scss/utils/_module";
+
+.radio {
+  position: relative;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  input {
+    display: none;
+    &:checked {
+      ~ span {
+        border-color: rgba(25, 118, 210, 1);
+        &:after {
+          transform: translateY(-50%) translateX(-50%) scale(1);
+        }
+      }
+    }
+  }
+  label {
+    padding-left: em(24);
+    cursor: pointer;
+    position: relative;
+    @include font(18, 1.5, $blackColor, 500, 0, $segoiUI);
+  }
+  span {
+    position: absolute;
+    left: 0;
+    width: em(16);
+    height: em(16);
+    border-radius: 60%;
+    border: 2px solid rgba(0, 0, 0, 0.6);
+    transition: border-color 0.3s ease;
+
+    &:after {
+      content: '';
+      position: absolute;
+      width: 60%;
+      height: 60%;
+      left: 50%;
+      top: 50%;
+      transform: translateY(-50%) translateX(-50%) scale(0);
+      transform-origin: center;
+      background-color: rgba(25, 118, 210, 1);
+      border-radius: 50%;
+      transition: transform 0.3s ease;
+    }
+  }
+}

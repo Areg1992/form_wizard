@@ -1,0 +1,19 @@
+@import "../../assets/scss/utils/_module";
+
+.field {
+  text-align: left;
+  margin-bottom: em(24);
+  width: em(230);
+  &-label {
+    margin-bottom: em(8);
+    @include font(16, 1.5, $blackColor, 500, 0, $segoiUI);
+  }
+  input {
+    width: 100%;
+    border: 1px solid grey;
+    border-radius: em(4);
+    height: em(56);
+    padding: 0 em(10);
+    background-color: transparent;
+  }
+}

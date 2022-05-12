@@ -1,0 +1,39 @@
+%userCursor {
+    cursor: pointer;
+    user-select: none;
+    -ms-user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none
+}
+
+%inlineMiddle {
+    display:inline-block;
+    vertical-align: middle
+}
+
+%flexBox {
+    display: -ms-flexbox;
+    display: flex
+}
+
+%backgroundCenter {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center
+}
+
+%backgroundContain {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center
+}
+
+%hide {
+    visibility: hidden;
+    opacity: 0
+}
+
+%show {
+    visibility: visible;
+    opacity: 1
+}

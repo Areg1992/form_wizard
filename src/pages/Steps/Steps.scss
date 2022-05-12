@@ -1,0 +1,19 @@
+@import "../../assets/scss/utils/_module";
+
+.page {
+  text-align: center;
+}
+
+
+
+.packages {
+  margin-bottom: em(40);
+}
+
+.calculation {
+  margin-bottom: em(48);
+
+  p {
+    @include font(24, 1.5, $blackColor, 700, 0, $segoiUI);
+  }
+}

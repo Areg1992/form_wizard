@@ -1,0 +1,60 @@
+@import "../../assets/scss/utils/_module";
+
+.select {
+  text-align: left;
+  z-index: 1;
+  width: em(230);
+  position: relative;
+
+  &-label {
+    margin-bottom: em(8);
+    @include font(16, 1.5, $blackColor, 500, 0, $segoiUI);
+  }
+  &-btn {
+    position: relative;
+    display: inline-flex;
+    width: 100%;
+    align-items: center;
+    cursor: pointer;
+    border: 1px solid grey;
+    border-radius: em(4);
+    height: em(56);
+    padding: 0 em(10);
+    background-color: transparent;
+    @include font(16, 1.3125, $blackColor, 500, 0, $segoiUI);
+
+    &:after {
+      content: '';
+      position: absolute;
+      right: em(8);
+      top: 50%;
+      transform: translateY(-50%);
+      width: 0;
+      height: 0;
+      border-left: em(8) solid transparent;
+      border-right: em(8) solid transparent;
+      border-top: em(8) solid $blackColor;
+    }
+  }
+  &-content {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: em(8) 0;
+    border-radius: em(4);
+    background-color: $whiteColor;
+    box-shadow: rgb(0 0 0 / 20%) 0px 5px 5px -3px, rgb(0 0 0 / 14%) 0px 8px 10px 1px,
+  }
+  &-item {
+    cursor: pointer;
+    margin: 8px 0;
+    padding: em(4) em(8);
+    transition: background-color 0.25s ease;
+    @include font(16, 1.5, $blackColor, 500, 0, $segoiUI);
+
+    &:hover {
+      background-color: rgba(0,0,0, 0.1);
+    }
+  }
+}

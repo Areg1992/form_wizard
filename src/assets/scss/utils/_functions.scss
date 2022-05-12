@@ -1,0 +1,28 @@
+@function strip-unit($value) {
+    @return $value / ($value * 0 + 1);
+}
+
+@function em($em, $context: $baseFontSize) {
+  @if (unitless($em)) {
+    $pixels: $em * 1;
+  }
+  @if (unitless($context)) {
+    $context: $context * 1;
+  }
+  @return $em / $context * 1em;
+}
+
+
+//
+
+@function strip-unit($number) {
+  @if type-of($number) == 'number' and not unitless($number) {
+    @return $number / ($number * 0 + 1);
+  }
+  @return $number;
+}
+
+/// Convert value to em.
+@function em($size, $base-font-size:16px) {
+  @return strip-unit($size) / strip-unit($base-font-size) * 1em;
+}

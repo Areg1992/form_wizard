@@ -1,0 +1,9 @@
+h1 {
+  margin: 0;
+  @include font(60, 1.1, currentColor, 400, 0, $segoiUI);
+}
+
+h2 {
+  margin: 0;
+  @include font(48, 1.1, currentColor, 400, 0, $segoiUI);
+}
