@@ -1,3 +1,7 @@
+About The Project
+
+Multi-step form (wizard) where user can fill in information, get price and buy an insurance policy.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
