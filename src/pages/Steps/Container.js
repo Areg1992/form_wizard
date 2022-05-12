@@ -29,7 +29,7 @@ const Container = () => {
     };
 
     return (
-        <>
+        <div className={step ===  0  || step ===  2 ? 'wrapper' :''}>
             {step ===  0 ?
                 <Start/>
                 :
@@ -67,7 +67,7 @@ const Container = () => {
                 />
             </div>
 
-        </>
+        </div>
     );
 };
 

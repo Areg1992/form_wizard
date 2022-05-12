@@ -3,43 +3,53 @@ import React from 'react';
 const Summary = ({name, age, country, packageName, premiumPrice}) => {
     return (
         <div className="page">
-            <div className="wrapper">
+            <div>
                 <h1>
                     Summary
                 </h1>
-                <h3>
+                <h2>
                     {name}
-                </h3>
-                <div>
+                </h2>
+                <div className="description">
                     <div>
-                        name:
-                        <span>
-                            {name}
-                        </span>
+                        <p>
+                            name:
+                            <span>
+                                {name}
+                            </span>
+                        </p>
                     </div>
                     <div>
-                        age:
-                        <span>
-                            {age}
-                        </span>
+                        <p>
+                            age:
+                            <span>
+                                {age}
+                            </span>
+                        </p>
                     </div>
                     <div>
-                        Where do you live:
-                        <span>
-                            {country.value}
-                        </span>
+                        <p>
+                            Where do you live::
+                            <span>
+                               {country.value}
+                            </span>
+                        </p>
                     </div>
                     <div>
-                        Package:
-                        <span>
-                            {packageName.name}
-                        </span>
+                        <p>
+                            Package:
+                            <span>
+                                  {packageName.name}
+                            </span>
+                        </p>
                     </div>
                     <div>
-                        Premium:
-                        <span>
-                            {premiumPrice}
-                        </span>
+                        <p>
+                            Premium:
+                            <span>
+                                {premiumPrice}
+                            </span>
+                        </p>
                     </div>
                 </div>
             </div>

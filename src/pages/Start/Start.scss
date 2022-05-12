@@ -1,14 +1,7 @@
 @import "../../assets/scss/utils/_module";
 
 .start {
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 
-  .wrapper {
-      padding: em(50) 0;
-  }
 }
 
 .wrapper {
@@ -16,4 +9,5 @@
   text-align: center;
   max-width: em(800);
   width: 100%;
+  margin: auto;
 }

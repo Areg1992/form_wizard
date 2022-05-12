@@ -30,45 +30,49 @@ const FormStep = ({name, setName, age, setAge, country, setCountry, packageName,
             <h1>
                 Tell us about yourself
             </h1>
-            <div className="form-step">
-                <Field fieldName="Name"
-                       required={true}
-                       type="text"
-                       value={name}
-                       onChange={(e) => {
-                           setName(e.target.value)
-                       }}
-                />
-                <Field fieldName="Age"
-                       type="number"
-                       required={true}
-                       value={age}
-                       onChange={(e) => setAge(e.target.value)}
-                />
-                <Select selectLabel="Where do you live"
-                        selected={country}
-                        setSelected={setCountry}
-                        options={countriesList}
-                />
-                <div className="wrapper">
-                    <div className="packages text-left">
-                        {packagesList.map((item) => (
-                            <Radio name="pack"
-                                   key={item.id}
-                                   label={`${item.name}  ${item.cost !== 0 ?  `(+${standardPrice  * item.cost / 100} ${country?.currency}, ${item.cost}%)`: ''}  `}
-                                   required={true}
-                                   checked={item.id === packageName.id || (!Boolean(packageName) && item.id === 1   )}
-                                   onChange={() => setPackageName(item)}
-                            />
-                        ))}
-                    </div>
-                    <div className="calculation">
-                        <p>
-                            Your premium is:
-                            {price > 0 ? price : ''} {country?.currency}
-                        </p>
-                    </div>
-                </div>
+            <div className="flex-container align-center form-step">
+               <div>
+                   <div className="fields-wrapper">
+                       <Field fieldName="Name"
+                              required={true}
+                              type="text"
+                              value={name}
+                              onChange={(e) => {
+                                  setName(e.target.value)
+                              }}
+                       />
+                       <Field fieldName="Age"
+                              type="number"
+                              required={true}
+                              value={age}
+                              onChange={(e) => setAge(e.target.value)}
+                       />
+                       <Select selectLabel="Where do you live"
+                               selected={country}
+                               setSelected={setCountry}
+                               options={countriesList}
+                       />
+                   </div>
+                   <div className="wrapper">
+                       <div className="packages text-left">
+                           {packagesList.map((item) => (
+                               <Radio name="pack"
+                                      key={item.id}
+                                      label={`${item.name}  ${item.cost !== 0 ?  `(+${standardPrice  * item.cost / 100} ${country?.currency}, ${item.cost}%)`: ''}  `}
+                                      required={true}
+                                      checked={item.id === packageName.id || (!Boolean(packageName) && item.id === 1   )}
+                                      onChange={() => setPackageName(item)}
+                               />
+                           ))}
+                       </div>
+                       <div className="calculation">
+                           <p>
+                               Your premium is:
+                               {price > 0 ? price : ''} {country?.currency}
+                           </p>
+                       </div>
+                   </div>
+               </div>
             </div>
         </div>
     );

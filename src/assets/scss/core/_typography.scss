@@ -1,16 +1,16 @@
 h1 {
   margin: 0;
-  @include font(60, 1.1, currentColor, 400, 0, $segoiUI);
+  @include font(60, 1.1, $blackColor, 400, 0, $segoiUI);
 }
 
 h2 {
   margin: 0;
-  @include font(48, 1.1, currentColor, 400, 0, $segoiUI);
+  @include font(48, 1.1, $blackColor, 400, 0, $segoiUI);
 }
 
 .description {
 
   p {
-    @include font(18, 1.3, currentColor, 400, 0, $segoiUI);
+    @include font(18, 1.3, $blackColor, 400, 0, $segoiUI);
   }
 }

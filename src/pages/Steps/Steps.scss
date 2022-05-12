@@ -21,5 +21,16 @@
 }
 
 .form-step {
+  max-width: em(800);
+  width: 100%;
+  margin: 0 auto;
 
+  >div {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+.fields-wrapper {
+  display: inline-block;
 }

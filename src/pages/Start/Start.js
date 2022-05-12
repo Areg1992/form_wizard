@@ -5,7 +5,7 @@ const Start = () => {
 
     return (
         <div className="start page">
-            <div className="wrapper">
+            <div>
                 <h1>
                     Hello There!
                 </h1>
